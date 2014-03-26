@@ -689,7 +689,7 @@ namespace ASAP
 
                 for (int i = 0; i < iFieldsCnt; i++)
                 {
-                    Environment.SetEnvironmentVariable(objDS.Tables[0].Columns[i].ColumnName.ToUpper(), objDS.Tables[0].Rows[0].ItemArray[i].ToString());
+                    Environment.SetEnvironmentVariable(objDS.Tables[0].Columns[i].ColumnName.ToUpper().Trim(), objDS.Tables[0].Rows[0].ItemArray[i].ToString());
                 }
 
                 //Close datasets and connections
